@@ -21,7 +21,7 @@
   <!-- JQVMap -->
   <link rel="stylesheet" href="{% static 'plugins/jqvmap/jqvmap.min.css' %}">
   <!-- Theme style -->
-  <link rel="stylesheet" href="{% static 'dist/css/adminlte.min.css' %}">
+  <link rel="stylesheet" href="{% static 'dist/css/style.css' %}">
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="{% static 'plugins/overlayScrollbars/css/OverlayScrollbars.min.cs' %}s">
   <!-- Daterange picker -->
@@ -53,25 +53,6 @@
     <ul class="navbar-nav ml-auto">
       <!-- Navbar Search -->
       <li class="nav-item">
-        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
-          <i class="fas fa-search"></i>
-        </a>
-        <div class="navbar-search-block">
-          <form class="form-inline">
-            <div class="input-group input-group-sm">
-              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-              <div class="input-group-append">
-                <button class="btn btn-navbar" type="submit">
-                  <i class="fas fa-search"></i>
-                </button>
-                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
-                  <i class="fas fa-times"></i>
-                </button>
-              </div>
-
-            </div>
-          </form>
-        </div>
       </li>
       <li>
        <a class="nav-link"> Welcome,</a>
@@ -102,7 +83,7 @@
             <a href="#" class="nav-link {% block atm_main %}{% endblock %}">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                ATM Details
+                Creditcard Management
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -110,7 +91,7 @@
               <li class="nav-item">
                 <a href="{% url 'home' %}" class="nav-link {% block atm_dashboard %}{% endblock %}">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard</p>
+                  <p>Register</p>
                 </a>
               </li>
             </ul>
@@ -118,7 +99,7 @@
               <li class="nav-item">
                 <a href="#" class="nav-link {% block atm_list %}{% endblock %}">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>ATM List</p>
+                  <p>Creditcard List</p>
                 </a>
               </li>
             </ul>
@@ -127,7 +108,7 @@
             <a href="#" class="nav-link {% block down_detail %}{% endblock %}">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                ATM Down
+                Creditcard Operation
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -135,13 +116,13 @@
               <li class="nav-item">
                 <a href="#" class="nav-link {% block down_form %}{% endblock %}">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Add ATM Down</p>
+                  <p>Reset pin</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link {% block down_list %}{% endblock %}">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>ATM Down List</p>
+                  <p>Reset password</p>
                 </a>
               </li>
             </ul>
@@ -239,7 +220,7 @@
 <!-- overlayScrollbars -->
 <script src="{% static 'plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js' %}"></script>
 <!-- AdminLTE App -->
-<script src="{% static 'dist/js/adminlte.js' %}"></script>
+<script src="{% static 'dist/js/index.js' %}"></script>
 <!-- AdminLTE for demo purposes -->
 {% block js %}{% endblock %}
 </html>
